@@ -3,14 +3,9 @@
 
 <hr>
 
-## 📺 Video
+## 📺 Imagem
 
-<figure>
-  <video controls="true" allowfullscreen="true" poster="./assets/img/teste03.webP">
-    <source src="./assets/img/NetflixClone.mp4" type="video/mp4">
-  </video>
-</figure>
-
+![image info](./assets/img/netflixclone.PNG)
 
 ## 📚 Funcionalidades e Desafios
 
@@ -25,7 +20,7 @@
     - Botões para interagir com o video,
     - Data atualizada automaticamente no footer.
  
-  * Como foi a primeira vez que utilizei API, tive bastante ajuda para conseguir fazer/aprender sobre o request. 
+  * Como foi a primeira vez que utilizei API, tive bastante ajuda para conseguir fazer/aprender sobre o request. A funcionalidade dos botões não está exatamente como deveria, mas como ainda não aprendi jQuery, foi a solução que encontrei.
 
   * Por causa de pré-requisitos de alguns navegadores, o video inicia sem som, e caso queria escutar o trailer, só ativa-lo no botão.  
     Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.
