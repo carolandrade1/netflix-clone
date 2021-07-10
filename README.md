@@ -1,7 +1,7 @@
 <p align="center">
-<font size="6">
- **Netflix Clone**
-</font>
+
+# Netflix Clone
+
 </p>
 
 Projeto desenvolvido para a resolução do Desafio na plataforma Digital Innovation One.
