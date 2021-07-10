@@ -1,10 +1,5 @@
-<p align="center">
-
-# Netflix Clone
-
-</p>
-
-Projeto desenvolvido para a resolução do Desafio na plataforma Digital Innovation One.
+<h1 align="center">Netflix Clone</h1>
+<h3 align="center">Projeto desenvolvido para a resolução do Desafio na plataforma Digital Innovation One.</h3>
 
 <hr>
 
@@ -40,12 +35,9 @@ Projeto desenvolvido para a resolução do Desafio na plataforma Digital Innovat
 
 ## ⏳ Bootcamp 
 
-<p align="center">
-<img src="./assets/img/bootcampMRV.png" alt="Logo MRV Front End SPA Developer" width="100"/>
-MRV Front End SPA Developer
-</p>
+<p align="center"><img src="./assets/img/bootcampMRV.png" alt="Logo MRV Front End SPA Developer" width="100"/></p>
+<p align="center">MRV Front End SPA Developer</p>
 
-<p align="center">
-<img src="./assets/img/bootcampLocaliza.png" alt="Logo LocalizaLabs React Developer" width="100"/>
-LocalizaLabs React Developer
-</p>
+
+<p align="center"><img src="./assets/img/bootcampLocaliza.png" alt="Logo LocalizaLabs React Developer" width="100"/></p>
+<p align="center">LocalizaLabs React Developer</p>
