@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
+}
+/*# sourceMappingURL=global.css.map */

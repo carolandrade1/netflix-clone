@@ -1,0 +1,46 @@
+.slider {
+  overflow-x: hidden;
+  background: linear-gradient(0deg, black 0%, black 94%, rgba(255, 255, 255, 0) 100%);
+}
+
+.slider__section {
+  display: inline-block;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.slider__title {
+  font-size: 1.35rem;
+  padding: 0 3.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.slider .section__item {
+  display: flex;
+  padding: 0 3.75rem;
+}
+
+.slider .item {
+  width: 14.375rem;
+  transform: scale(0.98);
+  transition: all ease 250ms;
+}
+
+.slider .item img {
+  border-radius: 3px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.slider .item:hover {
+  transform: scale(1.1);
+  z-index: 4;
+}
+
+.slider__button {
+  position: absolute;
+  width: 60px;
+  height: 342px;
+}
+/*# sourceMappingURL=slider.css.map */

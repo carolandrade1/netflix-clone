@@ -1,0 +1,79 @@
+.slider {
+    overflow-x: hidden;
+    padding-bottom: 2rem;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 94%, rgba(255,255,255,0) 100%);
+
+    @include breakpoint-down(medium) {
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 97.5%, rgba(255,255,255,0) 100%);
+    }
+
+    @include breakpoint-down(small) {
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 97.3%, rgba(255,255,255,0) 100%);
+    }
+
+    &__section {
+        display: inline-block;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    &__title {
+        font-size: 1.35rem;
+        padding: 0 4.7rem;
+        margin-bottom: 1.2rem;
+
+        @include breakpoint-down(medium) {
+            padding: 0 2rem;
+        }
+    }
+
+    .section__item {
+        display: flex;
+        padding: 0 4.3rem;
+
+        @include breakpoint-down(medium) {
+            padding: 0 2rem;
+        }
+    }
+
+    .item {
+        width: 14.375rem;
+        transform: scale(0.95);
+        transition: all ease 250ms;
+    }
+
+    .item img {
+        border-radius: 3px;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item:hover {
+        transform: scale(1.1);
+        z-index: 4;
+    }
+
+    &__button {
+        position: absolute;
+        margin-top: 0.5rem;
+        width: 4.7rem;
+        height: 21rem;
+        background-color: $lightBlack;
+        z-index: 2;
+        opacity: 0;
+        transition: all ease 300ms;
+    }
+
+    &__button:hover {
+        opacity: 1;
+    }
+}
+
+.btn__right {
+    right: 0;
+}
+
+.btn__left {
+   left: 0; 
+}

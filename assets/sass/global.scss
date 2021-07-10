@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap');
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arimo", sans-serif;
+  line-height: 1.2;
+  font-size: $font-small;
+  font-weight: 300;
+  color: $white;
+  background: var(--black);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $white;
+}
+
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// Visibility
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.displaynone {
+  display: none;
+}

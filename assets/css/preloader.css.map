@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,UAAU,EAAE,kFAAkF;CACjG;;AAED,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../sass/preloader.scss"
+    ],
+    "names": [],
+    "file": "preloader.css"
+}

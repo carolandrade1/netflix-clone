@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netflix Clone">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/netflix-logo-n.svg">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Netflix Clone</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="header__firstnav flex flex-ai-c">
+            <div class="header__image">
+                <h1>
+                    <img class="hide-for-mobile" src="./assets/img/Netflix_logo.svg" alt="Nertflix Logo" width="92"
+                        height="31">
+                    <img class="image__logo hide-for-desktop" src="./assets/img/netflix-logo-n.svg" alt="Nertflix Logo"
+                        width="92" height="31">
+                </h1>
+            </div>
+            <nav class="header__mobile">
+                <a class="navegar flex flex-ai-c" href="#" type="button">
+                    <p>Navegar</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 24 24"
+                        style="fill:rgb(255, 255, 255)">
+                        <path
+                            d="M11.178,19.569C11.364,19.839,11.672,20,12,20s0.636-0.161,0.822-0.431l9-13c0.212-0.306,0.236-0.704,0.063-1.033 C21.713,5.207,21.372,5,21,5H3C2.628,5,2.287,5.207,2.114,5.536C1.941,5.865,1.966,6.263,2.178,6.569L11.178,19.569z">
+                        </path>
+                    </svg>
+                </a>
+            </nav>
+            <nav class="header__menu">
+                <a href="#" class="menu__links">Início</a>
+                <a href="#" class="menu__links">Séries</a>
+                <a href="#" class="menu__links">Filmes</a>
+                <a href="#" class="menu__links">Bombando</a>
+                <a href="#" class="menu__links">Minha lista</a>
+            </nav>
+        </nav>
+        <nav class="header__secondnav flex flex-ai-c">
+            <a href="#" type="button" class="header__links">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    style="fill:rgb(255, 255, 255)">
+                    <path
+                        d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z">
+                    </path>
+                </svg>
+            </a>
+            <a href="#" class="header__links hide-for-mobile">INFANTIL</a>
+            <a href="#" class="header__links">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                    style="fill:rgb(255, 255, 255)">
+                    <path
+                        d="M12 22c1.311 0 2.407-.834 2.818-2H9.182C9.593 21.166 10.689 22 12 22zM19 14.586V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.185 4.074 5 6.783 5 10v4.586l-1.707 1.707C3.105 16.48 3 16.734 3 17v1c0 .553.447 1 1 1h16c.553 0 1-.447 1-1v-1c0-.266-.105-.52-.293-.707L19 14.586z">
+                    </path>
+                </svg>
+            </a>
+            <a href="#" class="header__links header__profile flex flex-ai-c">
+                <img src="./assets/img/profile-image.png" alt="Foto do Perfil">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 24 24"
+                    style="fill:rgb(255, 255, 255)">
+                    <path
+                        d="M11.178,19.569C11.364,19.839,11.672,20,12,20s0.636-0.161,0.822-0.431l9-13c0.212-0.306,0.236-0.704,0.063-1.033 C21.713,5.207,21.372,5,21,5H3C2.628,5,2.287,5.207,2.114,5.536C1.941,5.865,1.966,6.263,2.178,6.569L11.178,19.569z">
+                    </path>
+                </svg>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video id="video" class="hero__video" poster="./assets/img/teste03.webP" >
+                <!-- Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. -->
+                <source src="./assets/img/trailer.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero__info">
+                <div class="hero__description">
+                    <p class="hero__title">HE-MAN</p>
+                    <p class="hero__subtitle">Mestres do Universo: Salvando Eternia</p>
+                    <p class="hero__details">O príncipe Adam, de Eternia, descobre o poder de Grayskull e se transforma
+                        em He-Man, mestre do universo. Uma nova versão da série de animação clássica.</p>
+                </div>
+
+                <div class="hero__buttons">
+                    <div class="hero__firstbuttons">
+                        <button class="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill:rgba(0, 0, 0, 1)">
+                                <path
+                                    d="M5.536,21.886C5.682,21.962,5.841,22,6,22c0.2,0,0.398-0.06,0.569-0.178l13-9C19.839,12.635,20,12.328,20,12 s-0.161-0.635-0.431-0.822l-13-9C6.264,1.967,5.865,1.942,5.536,2.114C5.206,2.287,5,2.628,5,3v18 C5,21.372,5.206,21.713,5.536,21.886z">
+                                </path>
+                            </svg>
+                            <span>
+                                <p>Assistir</p>
+                            </span>
+                        </button>
+                        <button class="button btninfo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill:rgba(255, 255, 255, 1)">
+                                <path
+                                    d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8s3.589-8,8-8 s8,3.589,8,8S16.411,20,12,20z">
+                                </path>
+                                <path d="M11 11H13V17H11zM11 7H13V9H11z"></path>
+                            </svg>
+                            <span>
+                                <p>Mais informações</p>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="hero__secondbuttons">
+                        <button id="muteButton" class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22"
+                                style="fill:rgba(255, 255, 255, 1)">
+                                <path
+                                    d="M21.707 20.293l-2.023-2.023c1.44-1.686 2.315-3.846 2.315-6.27 0-4.091-2.472-7.453-5.999-9v2c2.387 1.386 3.999 4.047 3.999 7 0 1.832-.629 3.543-1.672 4.913l-1.285-1.285C17.644 14.536 18 13.19 18 12c0-1.771-.775-3.9-2-5v7.586l-2-2V4c0-.369-.203-.708-.528-.882-.324-.174-.72-.154-1.026.05L7.727 6.313l-4.02-4.02L2.293 3.707l18 18L21.707 20.293zM12 5.868v4.718L9.169 7.755 12 5.868zM4 17h2.697l5.748 3.832C12.612 20.943 12.806 21 13 21c.162 0 .324-.039.472-.118C13.797 20.708 14 20.369 14 20v-1.879l-2-2v2.011l-4.445-2.964c-.025-.017-.056-.02-.082-.033-.061-.033-.123-.058-.19-.078-.064-.019-.126-.032-.192-.038C7.059 15.016 7.032 15 7 15H4V9h.879L3.102 7.223C2.451 7.554 2 8.222 2 9v6C2 16.103 2.897 17 4 17z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button id="unmuteButton" class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22"
+                                style="fill:rgba(255, 255, 255, 1)">
+                                <path
+                                    d="M16,21c3.527-1.547,5.999-4.909,5.999-9S19.527,4.547,16,3v2c2.387,1.386,3.999,4.047,3.999,7S18.387,17.614,16,19V21z">
+                                </path>
+                                <path
+                                    d="M16 7v10c1.225-1.1 2-3.229 2-5S17.225 8.1 16 7zM4 17h2.697l5.748 3.832C12.612 20.943 12.806 21 13 21c.162 0 .324-.039.472-.118C13.797 20.708 14 20.369 14 20V4c0-.369-.203-.708-.528-.882-.324-.175-.72-.154-1.026.05L6.697 7H4C2.897 7 2 7.897 2 9v6C2 16.103 2.897 17 4 17zM4 9h3c.033 0 .061-.016.093-.019.064-.006.125-.02.188-.038.068-.021.131-.045.192-.078.026-.015.057-.017.082-.033L12 5.868v12.264l-4.445-2.964c-.025-.017-.056-.02-.082-.033-.061-.033-.123-.058-.19-.078-.064-.019-.126-.032-.192-.038C7.059 15.016 7.032 15 7 15H4V9z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button id="" class="btn reload">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22"
+                                style="fill:rgba(255, 255, 255, 1)">
+                                <path
+                                    d="M16,21c3.527-1.547,5.999-4.909,5.999-9S19.527,4.547,16,3v2c2.387,1.386,3.999,4.047,3.999,7S18.387,17.614,16,19V21z">
+                                </path>
+                                <path
+                                    d="M16 7v10c1.225-1.1 2-3.229 2-5S17.225 8.1 16 7zM4 17h2.697l5.748 3.832C12.612 20.943 12.806 21 13 21c.162 0 .324-.039.472-.118C13.797 20.708 14 20.369 14 20V4c0-.369-.203-.708-.528-.882-.324-.175-.72-.154-1.026.05L6.697 7H4C2.897 7 2 7.897 2 9v6C2 16.103 2.897 17 4 17zM4 9h3c.033 0 .061-.016.093-.019.064-.006.125-.02.188-.038.068-.021.131-.045.192-.078.026-.015.057-.017.082-.033L12 5.868v12.264l-4.445-2.964c-.025-.017-.056-.02-.082-.033-.061-.033-.123-.058-.19-.078-.064-.019-.126-.032-.192-.038C7.059 15.016 7.032 15 7 15H4V9z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="faixa">
+                            <p>10</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Dados API - <a href="https://www.themoviedb.org/" title="The Movie Data Base" target="_blank"
+                rel="noopener noreferrer">TMDB</a></p>
+        <p>Criado por <strong class="footer__madeby">Carol</strong></p>
+        <div class="footer__social">
+            <a href="https://github.com/carolandrade1" title="Github" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill:rgba(255, 255, 255, 1)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.026,2c-5.509,0-9.974,4.465-9.974,9.974c0,4.406,2.857,8.145,6.821,9.465 c0.499,0.09,0.679-0.217,0.679-0.481c0-0.237-0.008-0.865-0.011-1.696c-2.775,0.602-3.361-1.338-3.361-1.338 c-0.452-1.152-1.107-1.459-1.107-1.459c-0.905-0.619,0.069-0.605,0.069-0.605c1.002,0.07,1.527,1.028,1.527,1.028 c0.89,1.524,2.336,1.084,2.902,0.829c0.091-0.645,0.351-1.085,0.635-1.334c-2.214-0.251-4.542-1.107-4.542-4.93 c0-1.087,0.389-1.979,1.024-2.675c-0.101-0.253-0.446-1.268,0.099-2.64c0,0,0.837-0.269,2.742,1.021 c0.798-0.221,1.649-0.332,2.496-0.336c0.849,0.004,1.701,0.115,2.496,0.336c1.906-1.291,2.742-1.021,2.742-1.021 c0.545,1.372,0.203,2.387,0.099,2.64c0.64,0.696,1.024,1.587,1.024,2.675c0,3.833-2.33,4.675-4.552,4.922 c0.355,0.308,0.675,0.916,0.675,1.846c0,1.334-0.012,2.41-0.012,2.737c0,0.267,0.178,0.577,0.687,0.479 C19.146,20.115,22,16.379,22,11.974C22,6.465,17.535,2,12.026,2z">
+                    </path>
+                </svg>
+            </a>
+            <a href="www.linkedin.com/in/carolandrade1" title="Linkedin" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill:rgba(255, 255, 255, 1)">
+                    <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                    <path
+                        d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zM3.095 8.855H6.87V20.994H3.095z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://codepen.io/carolandrade1" title="Codepen" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill:rgba(255, 255, 255, 1)">
+                    <path
+                        d="M21.838,8.445C21.838,8.444,21.837,8.444,21.838,8.445c-0.002-0.001-0.002-0.002-0.003-0.004l0,0 c-0.001,0-0.001-0.001-0.001-0.001c0-0.001,0-0.001,0-0.001c-0.063-0.093-0.145-0.171-0.235-0.228l-9.164-6.08 c-0.255-0.175-0.644-0.175-0.898,0L2.371,8.214C2.278,8.271,2.196,8.351,2.133,8.445C2.04,8.585,1.997,8.742,2,8.897v6.16 c-0.003,0.153,0.04,0.309,0.131,0.448c0,0,0,0,0,0.001c0.001,0.001,0.001,0.001,0.002,0.002l0,0c0.003,0.006,0.007,0.01,0.01,0.015 v0.002c0.001,0,0.001,0,0.001,0c0.001,0,0.001,0,0.001,0.001c0.001,0,0.001,0.001,0.001,0.001c0.063,0.088,0.14,0.16,0.226,0.215 l9.165,6.082c0.128,0.088,0.282,0.139,0.448,0.139c0.169,0,0.323-0.051,0.45-0.139l9.165-6.082c0.091-0.058,0.172-0.134,0.235-0.229 c0.094-0.141,0.139-0.3,0.136-0.456v-6.16C21.974,8.742,21.93,8.585,21.838,8.445z M12.781,4.273l6.953,4.613l-3.183,2.112 l-3.771-2.536V4.273z M11.189,4.273v4.189l-3.771,2.536L4.237,8.887L11.189,4.273z M3.594,10.371l2.395,1.59l-2.395,1.611V10.371z M11.189,19.682l-6.96-4.617l3.195-2.15l3.765,2.498V19.682z M11.984,14.029l-3.128-2.078l3.128-2.105l3.131,2.105L11.984,14.029z M12.781,19.682v-4.27l3.766-2.498l3.193,2.15L12.781,19.682z M20.378,13.572l-2.396-1.611l2.396-1.59V13.572z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <p><strong>&copy;</strong><span id="date"></span></p>
+    </footer>
+
+    <!-- API -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/js/slidersection.js"></script>
+    <!-- MINI JS -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/herovideo.js"></script>
+    <script src="./assets/js/footerdate.js"></script>
+</body>
+
+</html>

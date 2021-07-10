@@ -1,0 +1,8 @@
+.preloader {
+  background: url("https://blog.ecadauma.com.br/wp-content/uploads/2020/04/netflix-loading.gif");
+}
+
+.hide-preloader {
+  display: none;
+}
+/*# sourceMappingURL=preloader.css.map */

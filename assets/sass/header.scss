@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-image: linear-gradient($black, transparent);
+  width: 100%;
+  min-height: 4.375rem;
+  padding: 0 3.75rem;
+
+  @include breakpoint-down(medium) {
+    min-height: 3.125rem;
+    align-items: center;
+    padding: 0.6rem 2rem;
+  }
+
+  @include breakpoint-down(small) {
+    padding: 0.6rem 0.8rem;
+  }
+
+  &__image {
+    padding-right: 2rem;
+
+    @include breakpoint-down(medium) {
+      padding: 0 0.2rem;
+      .image__logo {
+        width: 25px;
+      }
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include breakpoint-down(medium) {
+      display: inline;
+      background: transparent;
+      border: 0;
+      .navegar p {
+        padding: 0 0.5rem;
+      }
+    }
+  }
+
+  // Menu toggle, usando height e overflow para chegar no resultado.
+  &__menu {
+    padding: 0 0.5rem;
+    
+    .menu__links {
+      margin: 0 0.5rem;
+    }
+
+    .menu__links:hover{
+      font-weight: bold;
+    }
+
+    @include breakpoint-down(medium) {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      background-color: $black;
+      opacity: 0.95;
+      top: 65px;
+      left: 0px;
+      height: 0;
+      overflow: hidden;
+      transition: all 300ms ease-in;
+
+      .menu__links {
+        text-align: center;
+        padding: 1rem 4rem;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__links {
+    padding: 0 0.8rem;
+  }
+
+  &__profile img {
+    margin-right: 0.8rem;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+}
+
+.show-links {
+  height: 15.5rem;
+  border-top: solid 1px $white;
+}
+
+.header__color {
+  background: $blackblack;
+}

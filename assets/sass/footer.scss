@@ -1,0 +1,17 @@
+.footer {
+    background-color: $blackblack;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 14vh;
+
+    p {
+        font-size: 1rem;
+    }
+
+    &__madeby {
+        color: $red;
+    }
+
+}
