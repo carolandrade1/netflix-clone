@@ -455,12 +455,12 @@ button {
 .slider {
   overflow-x: hidden;
   padding-bottom: 2rem;
-  background: linear-gradient(0deg, black 0%, black 94%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, black 0%, black 95.5%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media (max-width: 63.9375em) {
   .slider {
-    background: linear-gradient(0deg, black 0%, black 97.5%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(0deg, black 0%, black 97.3%, rgba(255, 255, 255, 0) 100%);
   }
 }
 
@@ -478,8 +478,9 @@ button {
 
 .slider__title {
   font-size: 1.35rem;
+  font-weight: bold;
   padding: 0 4.7rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.6rem;
 }
 
 @media (max-width: 63.9375em) {

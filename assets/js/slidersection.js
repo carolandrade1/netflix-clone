@@ -83,15 +83,37 @@
 
     // Movimenta a seção dos posters de acordo com o valor do counter (array, objeto)
     function carousel(counter, slide) {
-        // working with slides
-        if (counter.count === 4) {
-            counter.count = 0;
-        }
-        if (counter.count < 0) {
-            counter.count = 4 - 1;
-        }
-        // é utilizado 22% pois a seção é considerada com uma grande 'faixa'.
-        slide.style.transform = `translateX(-${counter.count * 22}%)`;
+        if ($(window).width() < 1000) {
+            if (counter.count === 6) {
+                counter.count = 0;
+            }
+            if (counter.count < 0) {
+                counter.count = 6 - 1;
+            }
+        } else if ($(window).width() < 450) {
+            if (counter.count === 8) {
+                counter.count = 0;
+            }
+            if (counter.count < 0) {
+                counter.count = 8 - 1;
+            }
+        } else {
+            if (counter.count === 4) {
+                counter.count = 0;
+            }
+            if (counter.count < 0) {
+                counter.count = 4 - 1;
+            }
+        };
+
+        // é utilizado % dependendo da largura da tela, pois a seção é considerada com uma grande 'faixa'.
+        if ($(window).width() < 1000) {
+            slide.style.transform = `translateX(-${counter.count * 15}%)`
+        } else if ($(window).width() < 450) {
+            slide.style.transform = `translateX(-${counter.count * 5}%)`
+        } else {
+            slide.style.transform = `translateX(-${counter.count * 22}%)`
+        };
     };
 
     // Chama as seções dando a URL referente aos posters, o Titulo da seção, e o ID de cada uma.

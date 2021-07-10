@@ -3,6 +3,15 @@
 
 <hr>
 
+## 📺 Video
+
+<figure>
+  <video controls="true" allowfullscreen="true" poster="./assets/img/teste03.webP">
+    <source src="./assets/img/NetflixClone.mp4" type="video/mp4">
+  </video>
+</figure>
+
+
 ## 📚 Funcionalidades e Desafios
 
   - Design atualizado da pagina,
