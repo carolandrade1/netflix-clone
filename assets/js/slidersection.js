@@ -11,14 +11,14 @@
         const slider = document.querySelector(`.slider`);
         let comecoSection = `<div class="slider__section">
                                 <header class="slider__title">${titulo}</header>
-                                <button id="${id}-prev" class="slider__button btn__left" type="button">
+                                <button id="${id}-prev" class="slider__button btn__left" type="button" aria-label="Botão mover para a os posters anteriores da seção">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                                         style="fill:rgba(255, 255, 255, 1)">
                                         <path d="M12.707 17.293L8.414 13 18 13 18 11 8.414 11 12.707 6.707 11.293 5.293 4.586 12 11.293 18.707z">
                                         </path>
                                     </svg>
                                 </button>
-                                <button id="${id}-next" class="slider__button btn__right" type="button">
+                                <button id="${id}-next" class="slider__button btn__right" type="button" aria-label="Botão mover para a os proximos posters da seção">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
                                         style="fill:rgba(255, 255, 255, 1)">
                                         <path

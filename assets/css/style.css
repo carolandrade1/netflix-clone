@@ -547,7 +547,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  height: 14vh;
+  height: 20vh;
 }
 
 .footer p {
