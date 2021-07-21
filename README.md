@@ -15,7 +15,7 @@
 
   - Design atualizado da pagina,
   - Pagina responsiva,
-  - SASS,
+  - SCSS,
   - JavaScript:
     - Request API TMDB(Ajax),
     - Seta para movimentar o slider,
